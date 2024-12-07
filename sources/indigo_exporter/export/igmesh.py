@@ -97,7 +97,10 @@ class igmesh_writer(object):
         bmesh.ops.triangulate(bm, faces=ngons)
         bm.to_mesh(mesh)
         #####################
-        mesh.calc_normals_split()
+        # mesh.calc_normals_split()
+        # not needed anymore as Blnder API has been updated with Blnder 4.1 
+        # https://developer.blender.org/docs/release_notes/4.1/python_api/
+
     
         profile = False
         
